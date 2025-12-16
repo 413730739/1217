@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>劇情拼拼看</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <header class="top-header">
+      <h1>三要素拆解遊戲</h1>
+      <div class="subtitle">劇情拼拼看</div>
+    </header>
+
+    <main id="main-ui">
+      <section id="equation">
+        <div class="term-wrapper" data-term="who">
+          <div class="term-label" id="label-who">誰</div>
+          <div class="term">
+            <img id="placeholder-who" class="placeholder" src="" alt="誰" />
+          </div>
+          <div class="placeholder-caption" id="caption-who"></div>
+        </div>
+
+        <div class="plus">+</div>
+
+        <div class="term-wrapper" data-term="where">
+          <div class="term-label" id="label-where">在哪</div>
+          <div class="term">
+            <img id="placeholder-where" class="placeholder" src="" alt="在哪" />
+          </div>
+          <div class="placeholder-caption" id="caption-where"></div>
+        </div>
+
+        <div class="plus">+</div>
+
+        <div class="term-wrapper" data-term="what">
+          <div class="term-label" id="label-what">發生什麼事</div>
+          <div class="term">
+            <img id="placeholder-what" class="placeholder" src="" alt="發生什麼事" />
+          </div>
+          <div class="placeholder-caption" id="caption-what"></div>
+        </div>
+      </section>
+
+      <nav class="bottom-bar">
+        <div class="category" id="cat-who">
+          <div class="cat-title">誰</div>
+          <div class="thumbs">
+            <figure>
+              <img src="P/1.png" data-src="P/1.png" alt="1">
+              <figcaption>背影的人</figcaption>
+            </figure>
+            <figure>
+              <img src="P/2.png" data-src="P/2.png" alt="2">
+              <figcaption>一隻貓</figcaption>
+            </figure>
+            <figure>
+              <img src="P/3.png" data-src="P/3.png" alt="3">
+              <figcaption>一棵樹</figcaption>
+            </figure>
+            <figure>
+              <img src="P/4.png" data-src="P/4.png" alt="4">
+              <figcaption>一把雨傘</figcaption>
+            </figure>
+            <figure>
+              <img src="P/5.png" data-src="P/5.png" alt="5">
+              <figcaption>一個書包</figcaption>
+            </figure>
+            <figure>
+              <img src="P/6.png" data-src="P/6.png" alt="6">
+              <figcaption>一雙鞋子</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="category" id="cat-where">
+          <div class="cat-title">在哪</div>
+          <div class="thumbs">
+            <figure>
+              <img src="P/7.png" data-src="P/7.png" alt="7">
+              <figcaption>在教室</figcaption>
+            </figure>
+            <figure>
+              <img src="P/8.png" data-src="P/8.png" alt="8">
+              <figcaption>在夜晚的街道</figcaption>
+            </figure>
+            <figure>
+              <img src="P/9.png" data-src="P/9.png" alt="9">
+              <figcaption>在下雨的公園</figcaption>
+            </figure>
+            <figure>
+              <img src="P/10.png" data-src="P/10.png" alt="10">
+              <figcaption>在空蕩的房間</figcaption>
+            </figure>
+          
+            <figure>
+              <img src="P/12.png" data-src="P/12.png" alt="12">
+              <figcaption>在黃昏的河邊</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="category" id="cat-what">
+          <div class="cat-title">發生什麼事</div>
+          <div class="thumbs">
+            <figure>
+              <img src="P/13.png" data-src="P/13.png" alt="13">
+              <figcaption>等待</figcaption>
+            </figure>
+            <figure>
+              <img src="P/14.png" data-src="P/14.png" alt="14">
+              <figcaption>躲起來</figcaption>
+            </figure>
+            <figure>
+              <img src="P/15.png" data-src="P/15.png" alt="15">
+              <figcaption>迷路</figcaption>
+            </figure>
+            <figure>
+              <img src="P/16.png" data-src="P/16.png" alt="16">
+              <figcaption>快要遲到</figcaption>
+            </figure>
+            <figure>
+              <img src="P/17.png" data-src="P/17.png" alt="17">
+              <figcaption>剛發現什麼</figcaption>
+            </figure>
+            <figure>
+              <img src="P/18.png" data-src="P/18.png" alt="18">
+              <figcaption>被留下來</figcaption>
+            </figure>
+          </div>
+        </div>
+      </nav>
+    </main>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
